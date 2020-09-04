@@ -1,0 +1,41 @@
+body {
+    font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+  
+  .grid-container {
+    border: 5px solid darkblue;
+    display: grid;
+    grid-template-areas:
+      "hd hd hd hd hd hd"
+      "mn mn mn mn sb sb"
+      "ft ft ft ft ft ft";
+    gap: 60px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 75px auto 100px;
+    inline-size: auto;
+  }
+  
+  .grid-container > * {
+    background-color: lightpink;
+    padding: 10px;
+  }
+  
+  .header {
+    grid-area: hd;
+  }
+  
+  .main {
+    grid-area: mn;
+  }
+  
+  .sidebar {
+    grid-area: sb;
+  }
+  
+  .footer {
+    grid-area: ft;
+  }  
+
+@media (maxwidth: 725px) {
+
+}
