@@ -11,13 +11,14 @@ body {
       "ft ft ft ft ft ft";
     gap: 60px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 75px auto 100px;
-    inline-size: auto;
+    grid-template-rows: 72px auto 96px;
+    max-width: 1200px;
+    margin: auto;
   }
   
   .grid-container > * {
     background-color: lightpink;
-    padding: 10px;
+    padding: 8px;
   }
   
   .header {
@@ -36,10 +37,32 @@ body {
     grid-area: ft;
   }  
 
-/*@media (maxwidth: 725px) {
+@media (maxwidth: 728px) {
+    .sidebar {
+        display: none;
+    }
+}
+/*nav style*/
 
-}*/
 
 
 /* main style */
 
+.main {
+    display: grid;
+    
+    
+}
+
+.main > * {
+    border: 1px solid red;
+}
+
+.featured-img {
+    width: 500px;
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 100%;
+}
