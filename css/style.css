@@ -2,52 +2,69 @@
 
 body {
     font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-  
-  .grid-container {
+}
+
+.grid-container {
     /* border: 5px solid darkblue; */
     display: grid;
     grid-template-areas:
-      "hd hd hd hd hd hd"
-      "mn mn mn mn sb sb"
-      "ft ft ft ft ft ft";
-    gap: 60px;
-    grid-template-columns: repeat(6, 1fr);
+        "hd hd hd hd hd hd hd hd hd hd hd hd hd"
+        ". mn mn mn mn mn mn mn mn sb sb sb ."
+        "ft ft ft ft ft ft ft ft ft ft ft ft ft";
+    row-gap: 56px;
+    grid-template-columns: repeat(13, 1fr);
     grid-template-rows: 72px auto 96px;
-    /* max-width: 1200px; */
+    width: fit-content;
     margin: auto;
-  }
-  
-  .grid-container > * {
+    justify-content: space-between;
+}
+
+.grid-container > * {
     background-color: lightpink;
     padding: 8px;
-  }
-  
-  .header {
-    grid-area: hd;
-  }
-  
-  .main {
-    grid-area: mn;
-  }
-  
-  .sidebar {
-    grid-area: sb;
-  }
-  
-  .footer {
-    grid-area: ft;
-  }  
+}
 
-@media (maxwidth: 728px) {
-    .sidebar {
-        display: none;
+.header {
+    grid-area: hd;
+    display: grid;
+    grid-template-areas: 
+        "left-logo . . . right-nav";
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-self: center;
+}
+
+.main {
+    grid-area: mn;
+    padding-right: 64px;
+}
+
+.sidebar {
+    grid-area: sb;
+}
+
+.footer {
+    grid-area: ft;
+}  
+
+@media (max-width: 1072px) {
+    .main {
+        padding-right: 32px;
     }
+}
+
+@media (max-width: 728px) {
+
 }
 
 /*nav style*/
 .nav-logo {
     width: 120px;
+    grid-area: left-logo;
+}
+
+.nav-wrapper {
+    grid-area: right-nav;
 }
 
 
@@ -55,6 +72,7 @@ body {
 
 .main {
     display: grid;
+    max-width: 800px;
     
     
 }
@@ -63,11 +81,18 @@ body {
     border: 1px solid red;
 }
 
-.featured-img {
-    width: 500px;
+.featured-image {
+    max-width: 800px;
+    max-height: 380px;
+    overflow: hidden;
 }
 
 .avatar {
     width: 50px;
     border-radius: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
