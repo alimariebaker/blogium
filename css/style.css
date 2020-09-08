@@ -54,7 +54,20 @@ body {
 }
 
 @media (max-width: 728px) {
+    .grid-container {
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd hd hd hd"
+        "sb sb sb sb sb sb sb sb sb sb sb sb sb"
+        "mn mn mn mn mn mn mn mn mn mn mn mn mn"
+        "ft ft ft ft ft ft ft ft ft ft ft ft ft";
+        grid-template-rows: 72px auto auto 96px;
+        row-gap: 28px;
+    }
 
+
+    .main {
+        padding-right: 0px;
+    }
 }
 
 /*nav style*/
