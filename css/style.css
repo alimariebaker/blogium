@@ -162,6 +162,11 @@ img {
   border: 1px solid blue;
 }
 
+.blog-cards-wrapper {
+  display: grid;
+  row-gap: 16px;
+}
+
 .blog-card-image {
   max-width: 144px;
   max-height: 168px;
