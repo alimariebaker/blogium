@@ -166,7 +166,7 @@ img {
 
 .blog-cards-wrapper {
   display: grid;
-  row-gap: 16px;
+  row-gap: 24px;
 }
 
 .blog-card-image {
