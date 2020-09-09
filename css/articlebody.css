@@ -1,0 +1,40 @@
+/*articlebody layout*/
+.grid-container {
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd hd hd hd"
+    ". . mn mn mn mn mn mn mn mn mn . ."
+    "ft ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+.main {
+  max-width: 648px;
+}
+
+.article-wrapper {
+  display: grid;
+  row-gap: 16px;
+}
+
+.article-hd {
+  padding: 0;
+  margin: 0;
+}
+
+.article-hd-sub {
+  padding: 0;
+  margin: 0;
+  font-size: 1.24em;
+  color: gray;
+}
+
+.article-image {
+  max-width: 640px;
+  max-height: 320px;
+  overflow: hidden;
+}
+
+.article-copy-wrapper {
+  line-height: 1.75em;
+  text-align: justify;
+  text-justify: distribute;
+}
