@@ -12,6 +12,7 @@
 
 .main {
   padding-right: 64px;
+  max-width: 800px;
 }
 
 @media (max-width: 1072px) {
@@ -41,40 +42,6 @@
   max-width: 800px;
   max-height: 380px;
   overflow: hidden;
-}
-
-/* article info style */
-.article-info {
-  display: grid;
-  grid-template-areas:
-      "av at ."
-      "av dm .";
-  grid-template-columns: 60px, 1fr, 1fr;
-  grid-template-rows: 26px, 26px;
-  justify-content: left;
-  column-gap: 8px;
-  font-size: .8em;
-}
-
-.avatar {
-  grid-area: av;
-  width: 50px;
-  border-radius: 100%;
-  align-self: center;
-}
-
-.author {
-  grid-area: at;
-  padding: 0;
-  margin: 0;
-  align-self: end;
-}
-
-.date-min {
-  grid-area: dm;
-  padding: 0;
-  margin: 0;
-  align-self: start;
 }
 
 /* regular blog card style */

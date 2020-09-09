@@ -1,0 +1,18 @@
+/*articlebody layout*/
+.grid-container {
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd hd hd hd"
+    ". . mn mn mn mn mn mn mn mn mn . ."
+    "ft ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+.main {
+  max-width: 640px;
+}
+
+.article-image {
+  max-width: 640px;
+  max-height: 320px;
+  overflow: hidden;
+}
+
