@@ -214,6 +214,27 @@ img {
 }
 
 @media (max-width: 576px){
+  .blog-card-image {
+    max-width: 105px;
+    max-height: 120px;
+    overflow: hidden;
+  }
+  
+  .blog-card {
+    display: grid;
+    grid-template-areas:
+      "bt bi"
+      "bt bb";
+    grid-template-columns: 100%, auto;
+    grid-template-rows: 135px, 33px;
+    column-gap: 8px;
+  }
+  
+  .blog-bookmark-wrapper {
+    justify-self: end;
+    padding: 0 0 16px 0;
+  }
+
   .blog-card-copy {
     overflow: hidden;
     white-space: nowrap;
