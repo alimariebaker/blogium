@@ -1,141 +1,168 @@
 /* all style */
 
 body {
-    font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-areas:
-        "hd hd hd hd hd hd hd hd hd hd hd hd hd"
-        ". mn mn mn mn mn mn mn mn sb sb sb ."
-        "ft ft ft ft ft ft ft ft ft ft ft ft ft";
-    row-gap: 56px;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: 72px auto 96px;
-    width: fit-content;
-    margin: auto;
-    justify-content: space-between;
+  display: grid;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd hd hd hd"
+    ". mn mn mn mn mn mn mn mn sb sb sb ."
+    "ft ft ft ft ft ft ft ft ft ft ft ft ft";
+  row-gap: 56px;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 72px auto 96px;
+  width: fit-content;
+  margin: auto;
+  justify-content: space-between;
 }
 
 .grid-container > * {
-    background-color: lightpink;
-    padding: 8px;
+  background-color: lightpink;
+  padding: 8px;
 }
 
 .header {
-    grid-area: hd;
-    display: grid;
-    grid-template-areas: 
-        "left-logo . . . . right-nav";
-    grid-template-columns: 2fr, repeat(4, 1fr), 2fr;
-    align-items: center;
-    justify-items: center;
+  grid-area: hd;
+  display: grid;
+  grid-template-areas: 
+    "left-logo . . . . right-nav";
+  grid-template-columns: 2fr, repeat(4, 1fr), 2fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .main {
-    grid-area: mn;
-    padding-right: 64px;
+  grid-area: mn;
+  padding-right: 64px;
 }
 
 .sidebar {
-    grid-area: sb;
+  grid-area: sb;
 }
 
 .footer {
-    grid-area: ft;
-    display: grid;
-    grid-template-areas:
-        ". mid-foot ."
-        ". signup-foot .";
-    grid-template-columns: 3fr, 2fr, 3fr;
-    align-items: center;
-    justify-items: center;   
+  grid-area: ft;
+  display: grid;
+  grid-template-areas:
+    ". mid-foot ."
+    ". signup-foot .";
+  grid-template-columns: 3fr, 2fr, 3fr;
+  align-items: center;
+  justify-items: center;   
 }  
 
 @media (max-width: 1072px) {
-    .main {
-        padding-right: 32px;
-    }
+  .main {
+    padding-right: 32px;
+  }
 }
 
 @media (max-width: 728px) {
-    .grid-container {
-        grid-template-areas:
-        "hd hd hd hd hd hd hd hd hd hd hd hd hd"
-        "sb sb sb sb sb sb sb sb sb sb sb sb sb"
-        "mn mn mn mn mn mn mn mn mn mn mn mn mn"
-        "ft ft ft ft ft ft ft ft ft ft ft ft ft";
-        grid-template-rows: 72px auto auto 96px;
-        row-gap: 28px;
-    }
+  .grid-container {
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd hd hd hd hd hd"
+      "sb sb sb sb sb sb sb sb sb sb sb sb sb"
+      "mn mn mn mn mn mn mn mn mn mn mn mn mn"
+      "ft ft ft ft ft ft ft ft ft ft ft ft ft";
+    grid-template-rows: 72px auto auto 96px;
+    row-gap: 28px;
+  }
 
 
-    .main {
-        padding-right: 0px;
-    }
+  .main {
+    padding-right: 0px;
+  }
 }
 
 /*nav style*/
 .nav-logo {
-    width: 120px;
-    grid-area: left-logo;
+  width: 120px;
+  grid-area: left-logo;
 
 }
 
 .nav-wrapper {
-    grid-area: right-nav;
-    background-color: grey;
+  grid-area: right-nav;
+  background-color: grey;
 }
 
 .link-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
 }
 
 .link-box > a {
-    padding: 5px;
+  padding: 5px;
 }
 
 
 /* main style */
 
 .main {
-    display: grid;
-    max-width: 800px;
-    
-    
+  display: grid;
+  max-width: 800px;
 }
 
 .main > * {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .featured-image {
-    max-width: 800px;
-    max-height: 380px;
-    overflow: hidden;
-}
-
-.avatar {
-    width: 50px;
-    border-radius: 100%;
+  max-width: 800px;
+  max-height: 380px;
+  overflow: hidden;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* article info style */
+
+.article-info {
+  display: grid;
+  grid-template-areas:
+      "av at ."
+      "av dm .";
+  grid-template-columns: 60px, 1fr, 1fr;
+  grid-template-rows: 26px, 26px;
+  justify-content: left;
+  column-gap: 8px;
+}
+
+.avatar {
+  grid-area: av;
+  width: 50px;
+  border-radius: 100%;
+  align-self: center;
+}
+
+.author {
+  grid-area: at;
+  padding: 0px;
+  margin: 0px;
+  align-self: center;
+}
+
+.date-min {
+  grid-area: dm;
+  padding: 0px;
+  margin: 0px;
+  align-self: center;
 }
 
 /* footer style */
 .footer-wrapper {
-    grid-area: mid-foot;
-    background-color: grey;
+  grid-area: mid-foot;
+  background-color: grey;
 }
 
 .signup-wrapper {
-    grid-area: signup-foot;
-    background-color: purple;
+  grid-area: signup-foot;
+  background-color: purple;
 }
