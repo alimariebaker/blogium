@@ -1,0 +1,9 @@
+/*nav style*/
+.nav-logo {
+  width: 120px;
+  grid-area: left-logo;
+}
+
+.nav-wrapper {
+  grid-area: right-nav;
+}

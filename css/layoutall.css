@@ -1,0 +1,69 @@
+/* all style */
+body {
+    font: 1em Geneva, Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .grid-container > * {
+  background-color: lightpink;
+  padding: 8px;
+} */
+
+/* .main > * {
+  border: 1px solid red;
+} */
+
+/* all layout */
+.grid-container {
+  display: grid;
+  row-gap: 56px;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 72px auto 96px;
+  width: fit-content;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.header {
+  grid-area: hd;
+  display: grid;
+  grid-template-areas: 
+    "left-logo . . . . right-nav";
+  grid-template-columns: 2fr, repeat(4, 1fr), 2fr;
+  align-items: center;
+  justify-items: center;
+}
+
+/* all main style */
+.main {
+  grid-area: mn;
+  display: grid;
+  max-width: 800px;
+}
+
+.footer {
+  grid-area: ft;
+  display: grid;
+  grid-template-areas:
+    ". mid-foot ."
+    ". signup-foot .";
+  grid-template-columns: 3fr, 2fr, 3fr;
+  align-items: center;
+  justify-items: center;   
+}  
+
+.link-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+.link-box > a {
+  padding: 5px;
+}
+  
