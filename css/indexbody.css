@@ -1,56 +1,18 @@
-/* all style */
-body {
-  font: 1em Geneva, Helvetica, Arial, sans-serif;
-}
-
+/*indexbody layout*/
 .grid-container {
-  display: grid;
   grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd hd hd hd"
     ". mn mn mn mn mn mn mn mn sb sb sb ."
     "ft ft ft ft ft ft ft ft ft ft ft ft ft";
-  row-gap: 56px;
-  grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: 72px auto 96px;
-  width: fit-content;
-  margin: auto;
-  justify-content: space-between;
-}
-
-/* .grid-container > * {
-  background-color: lightpink;
-  padding: 8px;
-} */
-
-.header {
-  grid-area: hd;
-  display: grid;
-  grid-template-areas: 
-    "left-logo . . . . right-nav";
-  grid-template-columns: 2fr, repeat(4, 1fr), 2fr;
-  align-items: center;
-  justify-items: center;
-}
-
-.main {
-  grid-area: mn;
-  padding-right: 64px;
 }
 
 .sidebar {
   grid-area: sb;
 }
 
-.footer {
-  grid-area: ft;
-  display: grid;
-  grid-template-areas:
-    ". mid-foot ."
-    ". signup-foot .";
-  grid-template-columns: 3fr, 2fr, 3fr;
-  align-items: center;
-  justify-items: center;   
-}  
+.main {
+  padding-right: 64px;
+}
 
 @media (max-width: 1072px) {
   .main {
@@ -69,48 +31,9 @@ body {
     row-gap: 28px;
   }
 
-
   .main {
     padding-right: 0;
   }
-}
-
-/*nav style*/
-.nav-logo {
-  width: 120px;
-  grid-area: left-logo;
-}
-
-.nav-wrapper {
-  grid-area: right-nav;
-  /* background-color: grey; */
-}
-
-.link-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 12px;
-}
-
-.link-box > a {
-  padding: 5px;
-}
-
-
-/* main style */
-.main {
-  display: grid;
-  max-width: 800px;
-}
-
-/* .main > * {
-  border: 1px solid red;
-} */
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* featured article style */
@@ -160,6 +83,7 @@ img {
   padding: 16px 0 8px 0;
   border-bottom: 1px solid gray;
 }
+
 /* .blog-card > * {
   border: 1px solid blue;
 } */
@@ -246,15 +170,4 @@ img {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-}
-
-/* footer style */
-.footer-wrapper {
-  grid-area: mid-foot;
-  /* background-color: grey; */
-}
-
-.credits-wrapper {
-  grid-area: signup-foot;
-  background-color: purple;
 }
