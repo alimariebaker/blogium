@@ -1,0 +1,8 @@
+/* footer style */
+.footer-wrapper {
+  grid-area: mid-foot;
+}
+
+.credits-wrapper {
+  grid-area: signup-foot;
+}
