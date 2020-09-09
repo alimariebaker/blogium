@@ -5,7 +5,6 @@ body {
 }
 
 .grid-container {
-    /* border: 5px solid darkblue; */
     display: grid;
     grid-template-areas:
         "hd hd hd hd hd hd hd hd hd hd hd hd hd"
@@ -28,10 +27,10 @@ body {
     grid-area: hd;
     display: grid;
     grid-template-areas: 
-        "left-logo . . . right-nav";
-    grid-template-columns: repeat(5, 1fr);
+        "left-logo . . . . right-nav";
+    grid-template-columns: 2fr, repeat(4, 1fr);
+    align-items: center;
     justify-items: center;
-    align-self: center;
 }
 
 .main {
@@ -74,10 +73,23 @@ body {
 .nav-logo {
     width: 120px;
     grid-area: left-logo;
+
 }
 
 .nav-wrapper {
     grid-area: right-nav;
+    background-color: grey;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.nav-box > a {
+    padding: 5px;
 }
 
 
