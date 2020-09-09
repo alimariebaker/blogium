@@ -28,7 +28,7 @@ body {
     display: grid;
     grid-template-areas: 
         "left-logo . . . . right-nav";
-    grid-template-columns: 2fr, repeat(4, 1fr);
+    grid-template-columns: 2fr, repeat(4, 1fr), 2fr;
     align-items: center;
     justify-items: center;
 }
@@ -44,6 +44,13 @@ body {
 
 .footer {
     grid-area: ft;
+    display: grid;
+    grid-template-areas:
+        ". mid-foot ."
+        ". signup-foot .";
+    grid-template-columns: 3fr, 2fr, 3fr;
+    align-items: center;
+    justify-items: center;   
 }  
 
 @media (max-width: 1072px) {
@@ -81,14 +88,14 @@ body {
     background-color: grey;
 }
 
-.nav-box {
+.link-box {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 15px;
 }
 
-.nav-box > a {
+.link-box > a {
     padding: 5px;
 }
 
@@ -120,4 +127,15 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* footer style */
+.footer-wrapper {
+    grid-area: mid-foot;
+    background-color: grey;
+}
+
+.signup-wrapper {
+    grid-area: signup-foot;
+    background-color: purple;
 }
