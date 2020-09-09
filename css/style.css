@@ -1,5 +1,4 @@
 /* all style */
-
 body {
   font: 1em Geneva, Helvetica, Arial, sans-serif;
 }
@@ -80,7 +79,6 @@ body {
 .nav-logo {
   width: 120px;
   grid-area: left-logo;
-
 }
 
 .nav-wrapper {
@@ -92,7 +90,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 15px;
+  padding: 12px;
 }
 
 .link-box > a {
@@ -101,7 +99,6 @@ body {
 
 
 /* main style */
-
 .main {
   display: grid;
   max-width: 800px;
@@ -117,7 +114,6 @@ img {
 }
 
 /* featured article style */
-
 .featured-image {
   max-width: 800px;
   max-height: 380px;
@@ -125,7 +121,6 @@ img {
 }
 
 /* article info style */
-
 .article-info {
   display: grid;
   grid-template-areas:
@@ -169,7 +164,7 @@ img {
 
 .blog-card-image {
   max-width: 144px;
-  /* max-height: 200px */
+  max-height: 168px;
   overflow: hidden;
 }
 
@@ -178,14 +173,14 @@ img {
   grid-template-areas:
     "bt bb bi";
   grid-template-columns: 100%, auto, auto;
-  grid-template-rows: 200px;
+  grid-template-rows: 168px;
   column-gap: 8px;
 }
 
 .blog-text-wrapper {
   grid-area: bt;
   display: grid;
-  row-gap: 8px;
+  row-gap: 4px;
   align-items: center;
 }
 
@@ -208,7 +203,12 @@ img {
   grid-area: bi;
 }
 
-@media (max-width: 480px){
+.blog-bookmark-wrapper {
+  align-self: end;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 576px){
   .blog-card-copy {
     overflow: hidden;
     white-space: nowrap;
