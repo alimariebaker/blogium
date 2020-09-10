@@ -2,7 +2,7 @@
 .grid-container {
   grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd hd hd hd"
-    ". . mn mn mn mn mn mn mn mn mn . ."
+    ". al mn mn mn mn mn mn mn mn mn ar ."
     "ft ft ft ft ft ft ft ft ft ft ft ft ft";
 }
 
@@ -13,6 +13,16 @@
       "mn mn mn mn mn mn mn mn mn mn mn mn mn"
       "ft ft ft ft ft ft ft ft ft ft ft ft ft";
   }
+}
+
+.article-left {
+  grid-area: al;
+  margin: 56px;
+}
+
+.article-right {
+  grid-area: ar;
+  margin: 56px;
 }
 
 .article-wrapper {
