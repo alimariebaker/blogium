@@ -4,7 +4,7 @@
     grid-template-areas:
         "av at ."
         "av dm .";
-    grid-template-columns: 60px, 1fr, 1fr;
+    grid-template-columns: 60px, auto, auto;
     grid-template-rows: 26px, 26px;
     justify-content: left;
     column-gap: 8px;
