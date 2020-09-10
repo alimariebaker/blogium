@@ -57,8 +57,8 @@ a:hover {
   grid-template-areas:
     ". mid-foot ."
     ". signup-foot .";
-  grid-template-columns: 3fr, 2fr, 3fr;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;   
 }  
