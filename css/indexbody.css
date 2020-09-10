@@ -42,7 +42,12 @@
   }
 }
 
-/* featured article style */
+/* featured article style */ 
+.featured-blog-card > a,
+.blog-text-wrapper > a {
+  color: black;
+}
+
 .featured-image {
   max-width: 800px;
   max-height: 380px;
