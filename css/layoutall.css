@@ -17,6 +17,10 @@ img {
   border: 1px solid red;
 } */
 
+/* .blog-card > * {
+  border: 1px solid blue;
+} */
+
 /* all layout */
 .grid-container {
   display: grid;
@@ -30,12 +34,7 @@ img {
 
 .header {
   grid-area: hd;
-  display: grid;
-  grid-template-areas: 
-    "left-logo . . . . right-nav";
-  grid-template-columns: 2fr, repeat(4, 1fr), 2fr;
-  align-items: center;
-  justify-items: center;
+  padding: 0 64px 0 64px;
 }
 
 /* all main style */

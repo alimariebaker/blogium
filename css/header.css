@@ -1,9 +1,12 @@
+/* header flex box */
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*nav style*/
 .nav-logo {
   width: 120px;
-  grid-area: left-logo;
 }
 
-.nav-wrapper {
-  grid-area: right-nav;
-}
