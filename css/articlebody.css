@@ -13,6 +13,11 @@
       "mn mn mn mn mn mn mn mn mn mn mn mn mn"
       "ft ft ft ft ft ft ft ft ft ft ft ft ft";
   }
+
+  .article-hd,
+  .article-hd-sub {
+    text-align: justify;
+  }
 }
 
 .article-left {

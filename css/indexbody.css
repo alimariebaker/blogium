@@ -80,7 +80,7 @@
   display: grid;
   grid-template-areas:
     "bt bb bi";
-  grid-template-columns: 100% auto auto;
+  grid-template-columns: 1fr auto auto;
   grid-template-rows: 168px;
   column-gap: 8px;
 }
@@ -106,6 +106,7 @@
 
 .blog-bookmark-wrapper {
   grid-area: bb;
+  display: grid;
 }
 
 .blog-card-image {
@@ -114,12 +115,36 @@
 
 .blog-bookmark-wrapper {
   align-self: end;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 
-.blog-bookmark-wrapper > img {
+.blog-bookmark-button > img {
   height: 24px;
 }
+
+.blog-bookmark-button {
+  padding: 0;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0 solid transparent;
+  border-radius: 16%;
+  cursor: pointer;
+}
+
+.blog-bookmark-button:active {
+  background: #FFC300;
+  outline: none;
+  border: none;
+}
+
+.blog-bookmark-button:focus {
+  background: #FFC300;
+  outline: none;
+  border: none;
+}
+
+
+
 
 @media (max-width: 576px){
   .blog-card-image {
@@ -133,14 +158,13 @@
     grid-template-areas:
       "bt bi"
       "bt bb";
-    grid-template-columns: 100% auto;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 135px 33px;
     column-gap: 8px;
   }
   
   .blog-bookmark-wrapper {
     justify-self: end;
-    padding: 0 0 16px 0;
   }
 
   .blog-card-copy {
